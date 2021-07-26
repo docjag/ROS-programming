@@ -1,6 +1,12 @@
 <?xml version="1.0" ?>
 <launch>
+	<!-- Publisher Node-->
 	<node name="freq_pub_node" pkg="bedrock_ocean_assign" type="freq_pub.py"  output="screen" />
+
+	<!-- Subscriber Node-->
 	<node name="freq_sub_node" pkg="bedrock_ocean_assign" type="freq_sub.py"/>
+	
+	<!-- Unit Test-->
+	<test test-name="test_freq_pub_node" pkg="bedrock_ocean_assign" type="test_freq_pub.py"/>
 
 </launch>

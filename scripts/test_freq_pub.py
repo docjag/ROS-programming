@@ -24,8 +24,8 @@ class TestFreqPub(unittest.TestCase):
         rospy.Subscriber('frequency', Float32, self.callback_func)
 
         counter = 0
-        while not rospy.is_shutdown() and count < 5 and (not self.publish_ok):
-            sleep(1)
+        while not rospy.is_shutdown() and counter < 5 and (not self.publish_ok):
+            rospy.sleep(1)
             counter += 1
 
 if __name__ == '__main__':
