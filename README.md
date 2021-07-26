@@ -1,8 +1,12 @@
 # Bedrock Ocean ROS Assignment
 ## Tasks List:
 ---
-### Assignment details
+### Configuration:
+* OS: Ubuntu 20.04.2
+* ROS: ROS1 Noetic
+* Programming Language: Python3
 
+### Assignment details
 * Create a complete ROS solution which can be started from a launch file and will run on a single computer, with an ubuntu Bionic and ROS Melodic installation. 
 * The solution must
     * publish a message at a configurable frequency and which contains a single, random floating point value
