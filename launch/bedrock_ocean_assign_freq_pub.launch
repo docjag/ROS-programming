@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<launch>
+	<node name="freq_pub_node" pkg="bedrock_ocean_assign" type="freq_pub.py"  output="screen" />
+	<node name="freq_sub_node" pkg="bedrock_ocean_assign" type="freq_sub.py"/>
+
+</launch>

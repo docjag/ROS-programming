@@ -13,13 +13,13 @@ def frequency_publisher():
 
 
     # Create publisher to publish random floating point value
-    pub = rospy.Publisher('frequency', FrequencyInfo, queue_size=10)
+    pub = rospy.Publisher('frequency', Float32, queue_size=10)
     rate = rospy.Rate(1)  # 1 Hz = 1 message per second
         
     while not rospy.is_shutdown():
         # Generate random floating point value
         frequency = random.random()
-        rospy.loginfo(f"SENSOR FREQUNCY: {freq_info.freque}")
+        rospy.loginfo(f"SENSOR FREQUNCY: {frequency}")
 
         # Publish the ROS Message
         pub.publish(frequency)
