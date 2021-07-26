@@ -163,6 +163,7 @@ catkin_install_python(PROGRAMS
   scripts/freq_pub.py
   scripts/freq_pub2.py
   scripts/freq_sub.py
+  scripts/test_freq_pub.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
