@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 
-import sys
 import rospy
 import random
 import rostest
 import unittest
 from std_msgs.msg import Float32
-
-
-PKG = 'test_roslaunch'
 
 
 class TestFreqPub(unittest.TestCase):

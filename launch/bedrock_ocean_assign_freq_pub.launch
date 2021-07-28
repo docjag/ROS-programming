@@ -2,6 +2,7 @@
 <launch>
 	<!-- Publisher Node-->
 	<node name="freq_pub_node" pkg="bedrock_ocean_assign" type="freq_pub.py"  output="screen" />
+	<param name="publish_frequency" type="double" value="10.0" />
 
 	<!-- Subscriber Node-->
 	<node name="freq_sub_node" pkg="bedrock_ocean_assign" type="freq_sub.py"/>
