@@ -1,11 +1,9 @@
 # ROS Programming Experiment
 ## Tasks List:
----
 ### Configuration:
 * OS: Ubuntu 20.04.2
 * ROS: ROS1 Noetic
 * Programming Language: Python3,C++11
-
 ### Assignment details
 * Create a complete ROS solution which can be started from a launch file and will run on a single computer, with an ubuntu Focal Fosa and ROS Noetic installation. 
 * The solution must: 
