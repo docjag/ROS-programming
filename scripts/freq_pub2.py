@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 import rospy
-# from bedrock_ocean_assign.msg import FrequencyInfo
-from std_msgs.msg import Float32
+from bedrock_ocean_assign.msg import FrequencyInfo
 
 
 def frequency_publisher():

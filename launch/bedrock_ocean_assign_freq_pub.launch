@@ -1,8 +1,13 @@
 <?xml version="1.0" ?>
 <launch>
+	<rosparam command="load" file="$(find bedrock_ocean_assign)/config/frequency.yaml" />
+
 	<!-- Publisher Node-->
-	<node name="freq_pub_node" pkg="bedrock_ocean_assign" type="freq_pub.py"  output="screen" />
-	<param name="publish_frequency" type="double" value="10.0" />
+	<node name="freq_pub_node" pkg="bedrock_ocean_assign" type="freq_pub.py"  output="screen">
+
+		<!-- This tag is required when there is no yaml file-->
+		<param name="freq" type="double" value="1.0" />
+	</node>
 
 	<!-- Subscriber Node-->
 	<node name="freq_sub_node" pkg="bedrock_ocean_assign" type="freq_sub.py"/>
