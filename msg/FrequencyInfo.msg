@@ -1,1 +1,1 @@
-float32 frequency
+float32 data
